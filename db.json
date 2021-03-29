@@ -1,0 +1,55 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "states":[
+      {
+        "id":1,
+        "name":"Andhra Pradesh"
+      },
+      {
+        "id":2,
+        "name":"Telangana"
+      }
+  ],
+  "city":[
+    {
+      "id":1,
+      "city":"amaravathi"
+    },
+    {
+      "id":1,
+      "city":"vijayawada"
+    },
+    {
+      "id":1,
+      "city":"vizag"
+    },
+    {
+      "id":2,
+      "city":"hyderabad"
+    },
+    {
+      "id":2,
+      "city":"secundrabad"
+    },
+    {
+      "id":2,
+      "city":"warangal"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

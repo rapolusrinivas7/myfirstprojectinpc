@@ -1,0 +1,25 @@
+select state:
+<select name="state" id="state" (change)="onchange($event)">
+  <option value="">--select--</option>
+  <option *ngFor="let state of state" value="{{state.id}}" >{{state.name}}</option>
+</select>
+select city:
+<select name="city" id="city">
+  <option value="">--select--</option>
+  <option value="" *ngFor="let city of city">{{city.city}}</option>
+</select>
+<router-outlet></router-outlet>
+<div class="container">
+  <i>Teams : </i>
+  <select (change)="updateplayers($event)">
+    <option selected disabled>--select Team--</option>
+    <option *ngFor="let team of teams" [value]="team">{{team}}</option>
+  </select>
+  <br><br><br>
+  <i>Players : </i>
+  <select id="">
+    <option selected disabled>--select Plyers--</option>
+    <option *ngFor="let player of players" [value]="player">{{player}}</option>
+  </select>
+</div>
+<app-employees></app-employees>
